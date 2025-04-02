@@ -1,3 +1,4 @@
+<!-- eslint-disable prettier/prettier -->
 <template>
   <div
     id="screen"
@@ -9,7 +10,6 @@
     <div
       id="cards"
       class="bg-[#000] h-[100%] w-[100%] transition ease-in-out cards-load"
-      
     >
       <Cards />
     </div>
@@ -17,9 +17,8 @@
 </template>
 
 <script lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import Hello from "./components/Hello.vue";
 import Cards from "./components/Cards.vue";
+import Hello from "./components/Hello.vue";
 
 export default {
   components: {
@@ -50,10 +49,9 @@ body::-webkit-scrollbar {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
 
 .cards-load {
   animation: cards-appear 1s ease forwards;
@@ -68,5 +66,4 @@ body {
     opacity: 1;
   }
 }
-
 </style>
